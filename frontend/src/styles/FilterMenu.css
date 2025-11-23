@@ -1,0 +1,95 @@
+.filter-menu {
+    padding: 16px;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.filter-menu__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter-menu__title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.filter-menu__reset {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.filter-menu__reset:hover {
+    background: #e9ecef;
+}
+
+.filter-menu__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.filter-menu__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1c1c1c;
+}
+
+.filter-menu__checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.filter-menu__checkbox {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter-menu__checkbox input {
+    margin: 0;
+}
+
+.filter-menu__price {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-menu__input {
+    width: 100px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.filter-menu__dash {
+    color: #666;
+}
+
+.filter-menu__sort {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-menu__select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #fff;
+}

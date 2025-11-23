@@ -1,0 +1,89 @@
+.reject-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+.reject-modal {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.reject-modal h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+
+.reject-modal__select,
+.reject-modal__textarea {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+}
+
+.reject-modal__textarea {
+    height: 80px;
+    resize: vertical;
+    font-family: inherit;
+}
+
+.reject-modal__buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.reject-modal__btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.15s;
+}
+
+.reject-modal__btn--reject {
+    background: #dc3545;
+    color: white;
+}
+.reject-modal__btn--reject:hover {
+    background: #c82333;
+}
+
+.reject-modal__btn--cancel {
+    background: #f7f7f7;
+    color: #333;
+}
+.reject-modal__btn--cancel:hover {
+    background: #e9ecef;
+}
